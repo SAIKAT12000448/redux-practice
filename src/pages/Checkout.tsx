@@ -108,7 +108,7 @@ export default function Checkout() {
                     alt=""
                   />
                   <div>
-                    <h1 className="text-lg mb-2">{product.name}</h1>
+                    <h1 className="text-lg mb-2">{product.title}</h1>
                     <p>Price: {product.price}</p>
                   </div>
                 </div>
@@ -118,21 +118,7 @@ export default function Checkout() {
               </div>
             ))}
           </div>
-          <div className="space-y-2">
-            <div className="flex justify-between text-lg">
-              <p>Subtotal</p>
-              <p>77.90$</p>
-            </div>
-            <div className="flex justify-between text-lg">
-              <p>Delivery</p>
-              <p>4.5$</p>
-            </div>
-            <div className="flex justify-between text-xl font-bold">
-              <p>Total</p>
-              <p>81.95$</p>
-            </div>
-            <Button className="w-full">Checkout</Button>
-          </div>
+      
         </div>
       </div>
     </div>

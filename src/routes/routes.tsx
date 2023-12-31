@@ -7,6 +7,7 @@ import Products from '@/pages/Products';
 import Checkout from '@/pages/Checkout';
 import Signup from '@/pages/Signup';
 import ProductDetails from '@/pages/ProductDetails';
+import EditBooks from '@/pages/EditBooks';
 
 const routes = createBrowserRouter([
   {
@@ -22,12 +23,13 @@ const routes = createBrowserRouter([
         element: <Products />,
       },
       {
-        path: '/product-details/:id',
+        path: '/product-details/:_id',
         element: <ProductDetails />,
       },
+      
       {
-        path: '/checkout',
-        element: <Checkout />,
+        path: '/editproduct/:_id',
+        element: <EditBooks/>,
       },
     ],
   },
