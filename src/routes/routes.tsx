@@ -4,7 +4,6 @@ import Login from '@/pages/Login';
 import NotFound from '@/pages/NotFound';
 import Home from '@/pages/Home';
 import Products from '@/pages/Products';
-import Checkout from '@/pages/Checkout';
 import Signup from '@/pages/Signup';
 import ProductDetails from '@/pages/ProductDetails';
 import EditBooks from '@/pages/EditBooks';

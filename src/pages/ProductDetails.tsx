@@ -1,4 +1,4 @@
-import ProductReview from '@/components/ProductReview';
+
 import { Button } from '@/components/ui/button';
 import { addToCart } from '@/redux/feature/cart/cartSlice';
 import { useAppDispatch } from '@/redux/hooks';
@@ -45,7 +45,7 @@ export default function ProductDetails() {
           <p className="text-xl">Genre: {product?.genre}</p>
           <p className="text-xl">Publication Date: {product?.publication_date}</p>
         
-          <Button onClick={()=>dispatch(addToCart(product))}>Add to cart</Button>
+          <Button onClick={()=>dispatch(addToCart(product!))}>Add to cart</Button>
 
           <div className="flex space-x-4">
             <Button onClick={handleEdit}>Edit</Button>

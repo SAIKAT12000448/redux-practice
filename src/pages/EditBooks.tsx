@@ -13,7 +13,7 @@ export default function EditBooks() {
 
 
   const _id = useParams();
-  console.log(parseInt(_id._id));
+
   useEffect(() => {
     fetch('/data.json')
       .then((res) => res.json())
@@ -92,7 +92,7 @@ export default function EditBooks() {
                   type="text"
                   id="price"
                   className="mt-2"
-                  value={data?.publication_date}
+                  value={data?.publication_date || ''}
                 //   onChange={(e) => setPrice(e.target.value)}
                 />
               </div>
